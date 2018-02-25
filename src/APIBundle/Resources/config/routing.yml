@@ -1,0 +1,11 @@
+api_counter_get:
+    pattern:  /counters
+    defaults: { _controller: APIBundle:Index:get, _format: ~ }
+    requirements:
+        _method: GET
+api_counter_post:
+    pattern:  /counters/
+    defaults: { _controller: APIBundle:Index:post, _format: ~ }
+    requirements:
+        _method: POST        
+    
